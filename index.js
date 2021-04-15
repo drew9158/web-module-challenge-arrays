@@ -138,7 +138,8 @@ Use the removeFlavorByName function below to do the following:
 function removeFlavorByName(array, string){
     for (let i = 0; i < array.length; i++) {
         if (array[i].includes(string)) {
-            array.splice([i], 1);
+            // array.splice([i], 1);
+            console.log([i]);
         }
     }
     return array;
@@ -166,8 +167,14 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(array, string){
+    let filteredArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].includes(string)) {
+            filteredArray.push(array[i]);
+        }
+    }
+    return filteredArray; 
 }
 
 
