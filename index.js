@@ -84,7 +84,7 @@ function addFlavor(array, string){
     return array;
 }
 
-console.log(addFlavor(originalFlavors, "Rainbow Sherbert"))
+// console.log(addFlavor(originalFlavors, "Rainbow Sherbert"))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -137,9 +137,8 @@ Use the removeFlavorByName function below to do the following:
 
 function removeFlavorByName(array, string){
     for (let i = 0; i < array.length; i++) {
-        if (array[i].includes(string)) {
-            // array.splice([i], 1);
-            console.log(1);
+        if (array[i] == string) {
+            array.splice(i, 1);
         }
     }
     return array;
