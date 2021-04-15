@@ -116,7 +116,7 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 function getFlavorByIndex(array, number){
-    return array.slice(number, number+1);
+    return array.slice(number, number+1)[0];
 }
 
 
@@ -139,7 +139,7 @@ function removeFlavorByName(array, string){
     for (let i = 0; i < array.length; i++) {
         if (array[i].includes(string)) {
             // array.splice([i], 1);
-            console.log([i]);
+            console.log(1);
         }
     }
     return array;
